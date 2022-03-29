@@ -27,5 +27,8 @@ with open(file_name, "r") as file_in:
 largest = max(results, key=results.get)
 text_to_file("text.txt", largest + "\n" + results.get(largest) + "\n")
 
-        
+##
+# What I learned: Better to use an iter instead of the built in for-in construct as it has
+# more options like tell() and seek() which are removed from the for-in iterator
+# #       
         
